@@ -20,7 +20,7 @@ class Book(Base):
 class Author(Base):
     __tablename__ = "author"
     id = Column(Integer, primary_key=True)
-    name = Column(String)
+    name = Column(String, unique=True)
     age = Column(Integer)
     time_created = Column(DateTime(timezone=True), server_default=func.now())
     time_modified = Column(DateTime(timezone=True), onupdate=func.now())
