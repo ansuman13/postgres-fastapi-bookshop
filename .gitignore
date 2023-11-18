@@ -1,0 +1,7 @@
+*.pyc
+
+venv/
+alembic/
+alembic.ini
+
+.env
